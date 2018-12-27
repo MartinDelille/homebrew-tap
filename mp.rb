@@ -1,9 +1,8 @@
 class Mp < Formula
   desc "mp is a command line video processing app for macOS"
   homepage "https://github.com/benoit-pereira-da-silva/mp"
-  url "https://github.com/benoit-pereira-da-silva/mp"
-  version "1.0"
-  sha256 "8a6c58620493f24b82e4a56de14dd13cd896bb3a9b69394f5d51f3fac4ec0199"
+  url "https://github.com/benoit-pereira-da-silva/mp/archive/v1.0.1.tar.gz"
+  sha256 "b471b83c650a19989b5682ba4fc06b19c5c2b0ff5ee06492a2e314f50180ec57"
 
   def install
     system "swift", "build",
