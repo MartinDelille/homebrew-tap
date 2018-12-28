@@ -1,5 +1,7 @@
 # homebrew-tap
 
+![IPA Punk](ipapunk.png)
+
 This is my personal [Homebrew](https://brew.sh) tap.
 
 Install it via:
