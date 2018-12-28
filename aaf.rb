@@ -13,6 +13,9 @@ class Aaf < Formula
     system "pwd"
     system "cmake", "../..", "-G", "Xcode","-DPLATFORM=clang7", "-DARCH=x86_64", *std_cmake_args
     system "cmake", "--build", "."
+    Dir.chdir("..")
+    include.install Dir["shared/include/*"]
+    lib.install Dir["target/clang7-x86_64/Debug/RefImpl/*"]
   end
 
   test do
