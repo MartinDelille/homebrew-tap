@@ -1,8 +1,8 @@
 cask 'qlimagesize' do
   version '1.6.1'
-  sha256 'bdcb859844a868742c740c7fb39cdde7dff7992c8896ece9b6b5c88d2f0368ab'
+  sha256 'd7110f94a6be53e01d01ed92fb894395f54c0e2db7e69507d4eaf2970942a820'
 
-  url "https://github.com/martindelille/qlimagesize/releases/download/#{version}/qlImageSize.qlgenerator.zip"
+  url "https://github.com/Nyx0uf/qlImageSize/releases/download/#{version}/qlImageSize.qlgenerator.zip"
   appcast 'https://github.com/martindelille/qlimagesize/releases.atom'
   name 'qlImageSize'
   homepage 'https://github.com/Nyx0uf/qlImageSize'
