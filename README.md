@@ -2,16 +2,18 @@
 
 ![IPA Punk](ipapunk.png)
 
-This is my personal [Homebrew](https://brew.sh) tap.
+## How do I install these formulae?
 
-Install it via:
+`brew install martindelille/tap/<formula>`
 
-```
-brew tap martindelille/tap
-```
+Or `brew tap martindelille/tap` and then `brew install <formula>`.
 
-You can now install a formula from the tap:
+Or install via URL (which will not receive updates):
 
 ```
-brew install mp
+brew install https://raw.githubusercontent.com/martindelille/homebrew-tap/master/Formula/<formula>.rb
 ```
+
+## Documentation
+
+`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
