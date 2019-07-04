@@ -27,6 +27,23 @@ class QtAT56 < Formula
       -opensource -confirm-license
       -nomake examples
       -nomake tests
+      -skip qt3d
+      -skip qtactiveqt
+      -skip qtandroidextras
+      -skip qtcanvas3d
+      -skip qtconnectivity
+      -skip qtdockgallery
+      -skip qtenginio
+      -skip qtfeedback
+      -skip qtlocation
+      -skip qtscript
+      -skip qtsensors
+      -skip qtserialbus
+      -skip qtserialport
+      -skip qtwayland
+      -skip qtwebchannel
+      -skip qtwebengine
+      -skip qtwebkit
     ]
 
     system "./configure", *args
