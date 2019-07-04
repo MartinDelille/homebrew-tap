@@ -13,6 +13,12 @@ class QtAT56 < Formula
   depends_on :xcode => :build
   depends_on :macos => :sierra
 
+  # From https://bugreports.qt.io/browse/QTBUG-62266?focusedCommentId=371972#comment-371972
+  patch do
+    url "https://raw.githubusercontent.com/MartinDelille/homebrew-tap/master/qt563.patch"
+    sha256 "c7dc404553fd061e0e9bdbf21b7b2efeb28d3d48021da5ab8e7f22699afb3ec2"
+  end
+
   def install
     args = %W[
       -verbose
@@ -21,8 +27,8 @@ class QtAT56 < Formula
       -opensource -confirm-license
       -nomake examples
       -nomake tests
+      -skip qtpurchasing
     ]
-      #-proprietary-codecs
 
     system "./configure", *args
     system "make"
