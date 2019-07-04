@@ -27,7 +27,6 @@ class QtAT56 < Formula
       -opensource -confirm-license
       -nomake examples
       -nomake tests
-      -skip qtpurchasing
     ]
 
     system "./configure", *args
