@@ -32,9 +32,7 @@ class QtAT56 < Formula
       -skip qtandroidextras
       -skip qtcanvas3d
       -skip qtconnectivity
-      -skip qtdockgallery
       -skip qtenginio
-      -skip qtfeedback
       -skip qtlocation
       -skip qtscript
       -skip qtsensors
@@ -43,7 +41,6 @@ class QtAT56 < Formula
       -skip qtwayland
       -skip qtwebchannel
       -skip qtwebengine
-      -skip qtwebkit
     ]
 
     system "./configure", *args
