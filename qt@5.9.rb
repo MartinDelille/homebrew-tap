@@ -1,23 +1,17 @@
 # Patches for Qt must be at the very least submitted to Qt's Gerrit codereview
 # rather than their bug-report Jira. The latter is rarely reviewed by Qt.
-class QtAT56 < Formula
+class QtAT59 < Formula
   desc "Cross-platform application and UI framework"
   homepage "https://www.qt.io/"
-  url "https://download.qt.io/archive/qt/5.6/5.6.3/single/qt-everywhere-opensource-src-5.6.3.tar.xz"
-  mirror "https://qt.mirror.constant.com/archive/qt/5.6/5.6.3/single/qt-everywhere-opensource-src-5.6.3.tar.xz"
-  sha256 "2fa0cf2e5e8841b29a4be62062c1a65c4f6f2cf1beaf61a5fd661f520cd776d0"
+  url "https://download.qt.io/archive/qt/5.9/5.9.8/single/qt-everywhere-opensource-src-5.9.8.tar.xz"
+  mirror "https://qt.mirror.constant.com/archive/qt/5.9/5.9.8/single/qt-everywhere-opensource-src-5.9.8.tar.xz"
+  sha256 "86aca7dc37f161fc730a9d4f6bddf684962ca560327682e282ff61bf8b859c36"
 
   keg_only "Qt 5 has CMake issues when linked"
 
   depends_on "pkg-config" => :build
   depends_on :xcode => :build
   depends_on :macos => :sierra
-
-  # From https://bugreports.qt.io/browse/QTBUG-62266?focusedCommentId=371972#comment-371972
-  patch do
-    url "https://raw.githubusercontent.com/MartinDelille/homebrew-tap/master/qt563.patch"
-    sha256 "c7dc404553fd061e0e9bdbf21b7b2efeb28d3d48021da5ab8e7f22699afb3ec2"
-  end
 
   def install
     args = %W[
