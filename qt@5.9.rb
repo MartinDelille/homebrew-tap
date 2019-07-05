@@ -32,8 +32,6 @@ class QtAT59 < Formula
       -skip qtlocation
       -skip qtscript
       -skip qtsensors
-      -skip qtserialbus
-      -skip qtserialport
       -skip qtwayland
       -skip qtwebchannel
       -skip qtwebengine
