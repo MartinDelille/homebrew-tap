@@ -7,7 +7,6 @@ install:
   - brew tap --repair
 env:
   - PACKAGE=aaf
-  - PACKAGE=matterhorn
   - PACKAGE=pouet
   - PACKAGE=qmlfmt
 script:
