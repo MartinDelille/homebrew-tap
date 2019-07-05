@@ -23,7 +23,6 @@ class QtIosAT59 < Formula
       -nomake examples
       -nomake tests
       -no-rpath
-      -pkg-config
       -skip qt3d
       -skip qtactiveqt
       -skip qtandroidextras
