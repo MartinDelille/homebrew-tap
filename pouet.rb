@@ -13,6 +13,6 @@ class Pouet < Formula
   end
 
   test do
-    system "#{bin}/pouet"
+    system "#{bin}/pouet", "--version"
   end
 end
