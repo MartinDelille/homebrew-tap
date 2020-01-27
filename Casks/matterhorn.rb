@@ -7,5 +7,5 @@ cask 'matterhorn' do
   name 'Matterhorn'
   homepage "https://github.com/matterhorn-chat/matterhorn"
 
-  app ''
+  binary "matterhorn-#{version}-Darwin-x86_64/matterhorn"
 end
