@@ -1,15 +1,15 @@
 class Qmlfmt < Formula
   desc "Command line application that formats QML files"
   homepage "https://github.com/jesperhh/qmlfmt"
-  version "1.0.85"
+  version "1.1.2"
   url "https://github.com/jesperhh/qmlfmt/archive/#{version}.tar.gz"
-  sha256 "c78a79781f2499ffeadacfa3beea7752f8b7e511c45d163007aca73fbd066b2e"
+  sha256 "32662d3fb9107dec231a2b1253afc95f8088c5974fd7ee1a3d2f8aac58099609"
   depends_on "cmake" => :build
   depends_on "qt5" => :build
 
   resource "qt-creator" do
     url "https://github.com/qt-creator/qt-creator.git",
-        :revision => "e8df914e"
+        :revision => "2ee1af2"
   end
 
   def install
