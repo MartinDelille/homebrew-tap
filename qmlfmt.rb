@@ -5,7 +5,7 @@ class Qmlfmt < Formula
   url "https://github.com/jesperhh/qmlfmt/archive/#{version}.tar.gz"
   sha256 "c78a79781f2499ffeadacfa3beea7752f8b7e511c45d163007aca73fbd066b2e"
   depends_on "cmake" => :build
-  depends_on "qt" => :build
+  depends_on "qt5" => :build
 
   resource "qt-creator" do
     url "https://github.com/qt-creator/qt-creator.git",
